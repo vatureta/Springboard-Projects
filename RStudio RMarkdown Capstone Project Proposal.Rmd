@@ -1,0 +1,32 @@
+---
+title: "Capstone Project Proposal"
+author: "Viv Atureta"
+date: "February 16, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Financial Consumer complaints
+
+This document presents insight into potential questions which could be answered from a financial consumer compliants database.  This data is provided by the Consumer Financial Protection Bureau and is updated on a daily basis. With almost a million complaints received, the Bureau has categorized these products into 18 financial groups like payday loan or personal loan, checking or savings account, money transfer, debt collection and others. Also the information collected contains more than 160 kinds of issues including incorrect information, privacy, reporting, etc. A full list of the the complaint form  products, sub-products, issues and sub-issues are found here: <https://files.consumerfinance.gov/f/documents/201704_cfpb_Consumer_Complaint_Form_Product_and_Issue_Options.pdf>
+
+The data set comes from a database of information provided by the Bureau which updates on a daily basis and contains information about the origin of the comlaint, what company a response is being requested from and what action the company took in response to the complaint. More information available at  <https://tinyletter.com/data-is-plural/letters/data-is-plural-2017-12-06-edition> under __Financial consumer Complaints__ The complaint data is available for download in CSV and JSON format. I have downloaded the CSV format and read same into RStudio. There are a total of 795139 observations and 18 variables.
+
+The following are ideas of questions under consideration. Whilst the collection of the data has been focused on helping the consumer resolve issues which arise from their use of financial products, answering these questions is aimed at improving the consumer overall experience by provding the companies insight into approach they could take to significantly reduce the complaints.
+
+* The first idea for a question this data could data would be in the frequency of the complaints received by a company and if this is in some way connected to the _type_ or _time_ of response (or some other factor). 
+
+* Another idea around same data set is around the time of year when complaints are received and any relaionship to the type of complaint and the period in the year.
+
+* The final idea could determine whether a certain factor contributed to decrease or increase in complaints YoY. 
+
+The summary of the data set looks like this:
+
+```{r consumer_complaints <- read.csv("Consumer_Complaints.csv"), echo=FALSE}
+summary(consumer_complaints)
+```
+
+Final results will include the code and report slide deck.
