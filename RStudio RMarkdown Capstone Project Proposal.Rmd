@@ -25,8 +25,13 @@ The following are ideas of questions under consideration. Whilst the collection 
 
 The summary of the data set looks like this:
 
-```{r consumer_complaints <- read.csv("Consumer_Complaints.csv"), echo=FALSE}
-summary(consumer_complaints)
+<!-- ```{r consumer_complaints <- read.csv("Consumer_Complaints.csv"), echo=FALSE} -->
+<!-- summary(consumer_complaints) -->
+<!-- ``` -->
+
+```{r, echo=F}
+consumer_complaints <- read.csv('Consumer_Complaints.csv')
+consumer_complaints[1:10,]
 ```
 
 Final results will include the code and report slide deck.
